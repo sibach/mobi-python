@@ -2,10 +2,23 @@ Mobi Python Library
 ===================
 **This should be considered alpha quality software.**
 
+**Note: Current iteration of software dumps data as html _without_ Unicode support. Current task is to convert Unicode characters to plain text**
+
 This library provides a little API for accessing the contents of an unencrypted .mobi file.  Here's a short example:
 
 ```python
 from mobi import Mobi
+<<<<<<< HEAD
+=======
+
+book = Mobi("test/CharlesDarwin.mobi");
+book.parse();
+
+# this will print, 1 record at a time, the entire contents of the book
+for record in book:
+  print record
+```
+>>>>>>> franklinchou/master
 
 book = Mobi("test/CharlesDarwin.mobi");
 book.parse();
@@ -14,6 +27,10 @@ for record in book:
     print record
 ```
 This library provides quite a lot of access to the metadata included in any mobibook.  For example, Gutenburg's Origin of the Species:
+<<<<<<< HEAD
+=======
+
+>>>>>>> franklinchou/master
 ```python
 >>> pprint(book.config)
 {'exth': {'header length': 356,
@@ -65,6 +82,10 @@ This library provides quite a lot of access to the metadata included in any mobi
              'text length': 1336365}}
 >>>
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> franklinchou/master
 ## Retrieving Author and Title
 The author and title of a book can be retrieved using the author() and title()
 methods respectively on a Mobi() object. The parse() method needs to have
